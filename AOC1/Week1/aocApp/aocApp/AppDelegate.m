@@ -23,7 +23,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    // Create a variable using the float data type.
     // Cast the float to an int and using NSLog, output both the initial float value as well as the int value.
     // Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
     // Use an if, else if and else check using any of the data types of your choice.
@@ -31,10 +30,27 @@
     // Perform a nested loop printing out values to the console
     // Perform a while loop that increments an int variable and outputs to the console.
     
-
- 
     
-
+    NSString * myName = @"Hello, my name is Adam Du Puis.";
+    NSLog(@"%@", myName);
+    
+    float  myAge = 24.f;
+    int age = (int) myAge;
+    float myNextAge = 25.f;
+    int nextAge = (int) myNextAge;
+    
+    NSLog(@"I am %d years old.", age);
+    NSLog(@"I will be %d years old this year.", nextAge);
+    
+    
+    
+    
+    
+    //    float myAgeA = 24.f;
+    //    int myAgeB = (int) myAgeA;
+    //    float myAgeC = 24.f;
+    //    int myAgeA  = (int) myAgeB;
+    //    NSLog(@"I am %.1 years old.", myAgeC);
     
 }
 
@@ -46,7 +62,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
