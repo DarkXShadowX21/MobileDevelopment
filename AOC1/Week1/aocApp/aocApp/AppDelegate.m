@@ -33,56 +33,52 @@ void myFunctionD (int comboTricks) {
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
    
-    
+    //NSString to start off my story
     NSString * myName = @"Hello, my name is Adam Du Puis.";
     NSLog(@"%@", myName);
  
-    // Create a variable using the float data type.
-    // Cast the float to an int and using NSLog 
+    // Float data type & Cast float to int
     float myAge = 24.5f;
     int age = (int) myAge;
     float myNextAge = 25.f;
     int nextAge = (int) myNextAge;
-    // Output both the initial float value as well as the int value.
+    // Output
     NSLog(@"I turned %d in November.", age);
     NSLog(@"I am %.1f as of right now.", myAge);
     NSLog(@"I will be %d years old this November.", nextAge);
+    // Closing Float data type & Cast float to int
     
-    // Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
+    // AND/OR, float, int, BOOL.
     float skateYes = 10.0;
     int skateNo = 2.0;
     
     BOOL skate = YES;
-    // Use an if, else if and else check using any of the data types of your choice.
+    // if & else if
     if ((skate == 12.0) || (skateNo > 4.0)){
         NSLog(@"NO, I'm not going to skate today.");
     } else if ((skateNo > 1.0) && (skateYes > 6.0))
         {
         NSLog(@"YES, I'm going to skate today.");
-    }
+    } // Closing AND/OR, float, int, BOOL.
     
-    // Perform a single for loop printing out values to the console
-    
-    //Add single Loop****
-    
+    // Single Loop
     int impossibleLateFlip = 2;
     for (int a = 2; a < 5; a++) {
         NSLog(@"I just landed %i impossible late flips!", impossibleLateFlip);
         impossibleLateFlip++;
-    }
+    }// Closing Single Loop
     
-    // Perform a while loop that increments an int variable and outputs to the console.
-    
-    //Setup Index
+    // While Loop
+    //Seting up index
     int kickFLip = 2;   
     // Check Condition
     while ( kickFLip < 5 ) {
         NSLog(@"I am going to do %i kickflips in a row." ,kickFLip);
         //Increment of the index
         kickFLip++;
-    }
+    }// Closing While Loop
     
-    // Perform a nested loop printing out values to the console  
+    // Nested Loop 
     int treFlip = 2;
     int treFlipSuccess = 2;
     for (int a = 5; a <= 7; a++) {
@@ -93,7 +89,7 @@ void myFunctionD (int comboTricks) {
             treFlipSuccess++;
             break;
         }
-    }
+    }// Closing Nested Loop 
     
     
     // Additonal Function For Fun ;)
