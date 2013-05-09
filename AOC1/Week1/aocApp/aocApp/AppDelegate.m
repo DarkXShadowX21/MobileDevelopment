@@ -42,15 +42,13 @@
     NSLog(@"I am %d years old.", age);
     NSLog(@"I will be %d years old this year.", nextAge);
     
+    int tired = 100;
+    int bedTime = 90;
     
+    if ( (tired == 100) || (bedTime > 50) ){
+        NSLog(@"It's time for bed.");
+    } 
     
-    
-    
-    //    float myAgeA = 24.f;
-    //    int myAgeB = (int) myAgeA;
-    //    float myAgeC = 24.f;
-    //    int myAgeA  = (int) myAgeB;
-    //    NSLog(@"I am %.1 years old.", myAgeC);
     
 }
 
