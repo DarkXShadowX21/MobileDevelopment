@@ -23,7 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    // Cast the float to an int and using NSLog, output both the initial float value as well as the int value.
+
     // Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
     // Use an if, else if and else check using any of the data types of your choice.
     // Perform a single for loop printing out values to the console
