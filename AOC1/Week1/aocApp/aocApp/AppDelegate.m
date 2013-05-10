@@ -48,6 +48,8 @@ void myFunctionD (int comboTricks) {
     NSLog(@"I will be %d years old this November.", nextAge);
     // Closing Float data type & Cast float to int
     
+    
+    
     // AND/OR, float, int, BOOL.
     float skateYes = 10.0;
     int skateNo = 2.0;
@@ -56,10 +58,14 @@ void myFunctionD (int comboTricks) {
     // if & else if
     if ((skate == 12.0) || (skateNo > 4.0)){
         NSLog(@"NO, I'm not going to skate today.");
-    } else if ((skateNo > 1.0) && (skateYes > 6.0))
-        {
+    } else if ((skateNo > 1.0) && (skateYes > 6.0)) {
         NSLog(@"YES, I'm going to skate today.");
-    } // Closing AND/OR, float, int, BOOL.
+    } else {
+        NSLog(@"I might skate today.");
+    }// Closing AND/OR, float, int, BOOL.
+    
+//    else if ((conditionals)) { NSLog }
+//    else { NSLog }
     
     // Single Loop
     int impossibleLateFlip = 2;
