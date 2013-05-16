@@ -34,7 +34,20 @@
 //        
 //        - Book Information and UILabels
 //        Create a UILabel and place it at the top of the view. This is used as the title of the book. Center the text for this label.
-//            
+    
+    bookTitle = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 120.0f, 460.0f)];
+    if (bookTitle != nil)
+    {
+            bookTitle.text = @"The Wolf Gift";
+            bookTitle.textAlignment = NSTextAlignmentCenter;
+            bookTitle.textColor = [UIColor colorWithRed:0.804 green:0.522 blue:0.247 alpha:1];
+            bookTitle.backgroundColor = [UIColor colorWithRed:0.545 green:0.271 blue:0.075 alpha:1]; /*#8b4513*/
+    }
+    
+    [self.view addSubview:bookTitle];
+    
+    
+//
 //            Create another label that contains the text "Author:" with the text right justified.
 //            
 //            Create a UILabel to the right of the author title label and have it contain the name of the author of the book you chose. This text will be left justified.
@@ -51,7 +64,7 @@
 //            
 //            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array.
 //            
-//            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString separated by commas.    The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
+//            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString     separated by commas.    The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
 //            
 //            Create a label with the text "List of items" and add it to the parent view. Make sure the text is left justified.
 //            
