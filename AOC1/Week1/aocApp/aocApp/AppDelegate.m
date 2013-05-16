@@ -64,9 +64,7 @@ void myFunctionD (int comboTricks) {
         NSLog(@"I might skate today.");
     }// Closing AND/OR, float, int, BOOL.
     
-//    else if ((conditionals)) { NSLog }
-//    else { NSLog }
-    
+        
     // Single Loop
     int impossibleLateFlip = 2;
     for (int a = 2; a < 5; a++) {
@@ -95,7 +93,8 @@ void myFunctionD (int comboTricks) {
             treFlipSuccess++;
             break;
         }
-    }// Closing Nested Loop 
+    }// Closing Nested Loop
+    
     
     
     // Additonal Function For Fun ;)

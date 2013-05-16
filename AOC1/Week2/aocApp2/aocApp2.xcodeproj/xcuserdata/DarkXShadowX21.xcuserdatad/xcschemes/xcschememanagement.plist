@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>aocApp.xcscheme</key>
+		<key>aocApp2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>304C311D173B3E3A005223B1</key>
+		<key>3070771C1745526D008A8F29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
