@@ -25,10 +25,14 @@
 //    
 //    Make sure that ALL the colors you use are different, if you have 8 labels you will use 16 colors, 9 labels=18 colors, and so on. All text will need to be readable so choose the colors wisely. All UI elements must be created in code and not using Interface Builder at this time. We do this so you understand how UI creation works in detail.
 //        
-//        View
+//        - View
 //        Change the background color of the view to any color you wish.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
 //        
-//        Book Information and UILabels
+//        - Book Information and UILabels
 //        Create a UILabel and place it at the top of the view. This is used as the title of the book. Center the text for this label.
 //            
 //            Create another label that contains the text "Author:" with the text right justified.
@@ -47,7 +51,7 @@
 //            
 //            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array.
 //            
-//            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString separated by commas. The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
+//            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString separated by commas.    The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
 //            
 //            Create a label with the text "List of items" and add it to the parent view. Make sure the text is left justified.
 //            
