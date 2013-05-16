@@ -46,28 +46,38 @@
     
     [self.view addSubview:bookTitle];
     
-    
-//
 //            Create another label that contains the text "Author:" with the text right justified.
-//            
+    
+    author = [[UILabel alloc] initWithFrame:CGRectMake(120.0f, 0.0f, 100.0f, 20.0f)];
+    if (author != nil)
+    {
+        author.text = @"Author: ";
+        author.textAlignment = NSTextAlignmentRight;
+        author.textColor = [UIColor colorWithRed:0.863 green:0.078 blue:0.235 alpha:1] /*#dc143c*/;
+        author.backgroundColor = [UIColor colorWithRed:0.855 green:0.647 blue:0.125 alpha:1]; /*#daa520*/
+    }
+    
+    [self.view addSubview:author];
+
+            
 //            Create a UILabel to the right of the author title label and have it contain the name of the author of the book you chose. This text will be left justified.
-//            
+         
 //            Create a UILabel on the next line called "Published:". This text is right justified.
-//            
+           
 //            Create a label next to the Published label and add the text of when the book was published. This text is left justified.
-//            
+           
 //            Create a UILabel with the text "Summary". This text is left justified.
-//            
+          
 //            Create another UILabel that contains a small summary of the book's plot. This text is centered and should span multiple lines.
-//            
+         
 //            Labels and Arrays
-//            
+           
 //            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array.
-//            
+         
 //            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString     separated by commas.    The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
-//            
+           
 //            Create a label with the text "List of items" and add it to the parent view. Make sure the text is left justified.
-//            
+          
 //            Create another label beneath and set the text to the NSMutableString text. Increase the number of lines if necessary. Make sure the text in this label is centered
     
     
