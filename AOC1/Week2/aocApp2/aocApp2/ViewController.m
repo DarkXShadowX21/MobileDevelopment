@@ -87,11 +87,45 @@
     [self.view addSubview:published];
     
 //            Create a label next to the Published label and add the text of when the book was published. This text is left justified.
-           
+    
+    year = [[UILabel alloc] initWithFrame:CGRectMake(220.0f, 20.0f, 100.0f, 20.0f)];
+    if (year != nil)
+    {
+        year.text = @" 2012";
+        year.textAlignment = NSTextAlignmentLeft;
+        year.textColor = [UIColor colorWithRed:0.902 green:0.902 blue:0 alpha:1]; /*#e6e60*/
+        year.backgroundColor = [UIColor colorWithRed:0 green:0.4 blue:1 alpha:1]; /*#0066ff*/
+    }
+    
+    [self.view addSubview:year];
+    
 //            Create a UILabel with the text "Summary". This text is left justified.
-          
+    
+    summary = [[UILabel alloc] initWithFrame:CGRectMake(120.0f, 40.0f, 100.0f, 20.0f)];
+    if (summary != nil)
+    {
+        summary.text = @"Summary";
+        summary.textAlignment = NSTextAlignmentLeft;
+        summary.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1]; /*#000000*/
+        summary.backgroundColor = [UIColor colorWithRed:0.698 green:0 blue:0 alpha:1]; /*#b2000*/
+    }
+    
+    [self.view addSubview:summary];
+    
 //            Create another UILabel that contains a small summary of the book's plot. This text is centered and should span multiple lines.
-         
+    
+    plot = [[UILabel alloc] initWithFrame:CGRectMake(120.0f, 60.0f, 200.0f, 290.0f)];
+    if (plot != nil)
+    {
+        plot.text = @" A 23 year old reporter by the name of Reuben arrives at a mansion after a 4 hour trip. Reuben decided it would be a perfect setting to settle into and do a reports on. During his visits, his normal life started to change. After a crisis at the mansion, Reuben wakes up not feeling like himself. ";
+        plot.textAlignment = NSTextAlignmentCenter;
+        plot.textColor = [UIColor colorWithRed:0 green:0.2 blue:0.8 alpha:1]; /*#0033cc*/
+        plot.backgroundColor = [UIColor colorWithRed:1 green:0.6 blue:0 alpha:1]; /*#ff9900*/
+        plot.numberOfLines = 15;
+    }
+    
+    [self.view addSubview:plot];
+    
 //            Labels and Arrays
            
 //            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array.

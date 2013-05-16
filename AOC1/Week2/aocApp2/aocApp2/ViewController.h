@@ -14,6 +14,8 @@
     UILabel * author;
     UILabel * authorName;
     UILabel * published;
-    
+    UILabel * year;
+    UILabel * summary;
+    UILabel * plot;
 }
 @end
