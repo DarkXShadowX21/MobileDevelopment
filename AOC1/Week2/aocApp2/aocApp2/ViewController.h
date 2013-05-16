@@ -17,5 +17,6 @@
     UILabel * year;
     UILabel * summary;
     UILabel * plot;
+    UILabel * bookItems;
 }
 @end

@@ -126,13 +126,29 @@
     
     [self.view addSubview:plot];
     
-//            Labels and Arrays
-           
-//            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array.
+//            - Labels and Arrays
+    
+//            Create a label with the text "List of items" and add it to the parent view. Make sure the text is left justified.
+    
+    bookItems = [[UILabel alloc] initWithFrame:CGRectMake(120.0f, 350.0f, 100.0f, 20.0f)];
+    if (bookItems != nil)
+    {
+        bookItems.text = @"Book Items";
+        bookItems.textAlignment = NSTextAlignmentLeft;
+        bookItems.textColor = [UIColor colorWithRed:0.4 green:0 blue:0.4 alpha:1]; /*#660066*/
+        bookItems.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0.4 alpha:1]; /*#ff0066*/
+    }
+    
+    [self.view addSubview:bookItems];
+    
+//            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array
+    
+    
+    
          
 //            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString     separated by commas.    The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
            
-//            Create a label with the text "List of items" and add it to the parent view. Make sure the text is left justified.
+
           
 //            Create another label beneath and set the text to the NSMutableString text. Increase the number of lines if necessary. Make sure the text in this label is centered
     
