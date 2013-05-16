@@ -10,8 +10,10 @@
 
 @interface ViewController : UIViewController{
 
-UILabel * bookTitle;
-UILabel * author;
-UILabel * authorName;
+    UILabel * bookTitle;
+    UILabel * author;
+    UILabel * authorName;
+    UILabel * published;
+    
 }
 @end

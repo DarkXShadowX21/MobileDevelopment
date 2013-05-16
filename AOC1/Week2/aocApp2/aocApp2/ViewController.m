@@ -65,7 +65,7 @@
     authorName = [[UILabel alloc] initWithFrame:CGRectMake(220.0f, 0.0f, 100.0f, 20.0f)];
     if (authorName != nil)
     {
-        authorName.text = @"Anne Rice";
+        authorName.text = @" Anne Rice";
         authorName.textAlignment = NSTextAlignmentLeft;
         authorName.textColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:1]; /*#00ff00*/
         authorName.backgroundColor = [UIColor colorWithRed:0.482 green:0.408 blue:0.933 alpha:1]; /*#7b68ee*/
@@ -74,7 +74,18 @@
     [self.view addSubview:authorName];
     
 //            Create a UILabel on the next line called "Published:". This text is right justified.
-           
+    
+    published = [[UILabel alloc] initWithFrame:CGRectMake(120.0f, 20.0f, 100.0f, 20.0f)];
+    if (published != nil)
+    {
+        published.text = @"Published: ";
+        published.textAlignment = NSTextAlignmentRight;
+        published.textColor = [UIColor colorWithRed:0.282 green:0.82 blue:0.8 alpha:1]; /*#48d1cc*/
+        published.backgroundColor = [UIColor colorWithRed:0.294 green:0 blue:0.51 alpha:1]; /*#4b0082*/
+    }
+    
+    [self.view addSubview:published];
+    
 //            Create a label next to the Published label and add the text of when the book was published. This text is left justified.
            
 //            Create a UILabel with the text "Summary". This text is left justified.
