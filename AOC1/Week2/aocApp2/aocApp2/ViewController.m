@@ -143,17 +143,39 @@
     
 //            Create an NSArray of 5 items talked about in the book. These items will be NSStrings. Add the items to the array
     
+    bookItem1 = @"Relationships";
+    bookItem2 = @"Reporter";
+    bookItem3 = @" Wolves";
+    bookItem4 = @"Ruebon";
+    bookItem5 = @"Mansion";
     
+    bookEvents = [[NSArray alloc] initWithObjects: bookItem1, bookItem2, bookItem3, bookItem4, bookItem5, nil];
     
-         
-//            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString     separated by commas.    The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
+//            Create a variable of type NSMutableString and allocate it. Loop through the NSArray you created and append each of these items to your NSMutableString     separated by commas. The last item should be preceded by an "and" (For example: dinosaurs, jeeps, storm, giant turkeys, and eating people).
            
-
-          
+    allBookEvents = [[NSMutableString alloc] initWithCapacity:5];
+    for ( int i = 0; i < bookEvents.count; i++){
+        [allBookEvents appendString: [bookEvents objectAtIndex: i]];
+        if ( i < bookEvents.count - 1){
+            [allBookEvents appendString: @","];
+        }
+    }
+    
+    
 //            Create another label beneath and set the text to the NSMutableString text. Increase the number of lines if necessary. Make sure the text in this label is centered
     
     
+    allBookItems = [[UILabel alloc] initWithFrame:CGRectMake(120.0f, 370.0f, 200.0f, 90.0f)];
+    if (bookItems != nil)
+    {
+        allBookItems.text = allBookEvents;
+        allBookItems.textAlignment = NSTextAlignmentCenter;
+        allBookItems.textColor = [UIColor colorWithRed:0.298 green:0.2 blue:0.004 alpha:1]; /*#4c331*/
+        allBookItems.backgroundColor = [UIColor colorWithRed:0 green:0.502 blue:0 alpha:1]; /*#008000*/
+        allBookItems.numberOfLines = 15;
+    }
     
+    [self.view addSubview:allBookItems];
     
     
     
