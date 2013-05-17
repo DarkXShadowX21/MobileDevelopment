@@ -129,7 +129,7 @@
     bookItem2 = @"Reporter";
     bookItem3 = @" Wolves";
     bookItem4 = @"Ruebon";
-    bookItem5 = @"Mansion";
+    bookItem5 = @"and a Mansion";
     
     bookEvents = [[NSArray alloc] initWithObjects: bookItem1, bookItem2, bookItem3, bookItem4, bookItem5, nil];//Multiple NSArray's Closed
     
