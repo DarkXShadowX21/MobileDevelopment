@@ -14,11 +14,30 @@
 
 @implementation ViewController
 
+- (NSInteger) add: (NSInteger) valueA valueB: (NSInteger) valueB{
+
+
+};
+
+int myFunction (  ) {
+    NSLog(@"Blah Function");
+    
+    //return statement is used at end of a function
+    return 0; 
+    
+};
+
+
+
+
+
 - (void)viewDidLoad
 {
 
 
 //    1. Create a function called Add. This function will take two NSInteger or int types and return the result of an addition between these two.
+    
+    
     
 //    2. Create a BOOL function called Compare that takes two NSInteger values. Return YES or NO based on whether the values are equal.
     
@@ -36,11 +55,11 @@
     
 //    9. Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
     
-//        DisplayAlertWithString Function
+//    DisplayAlertWithString Function
     
-//        1. Take the passed in NSString and display it in the alert view
+//    1. Take the passed in NSString and display it in the alert view
     
-//        2. Create an UIAlertView
+//    2. Create an UIAlertView
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
