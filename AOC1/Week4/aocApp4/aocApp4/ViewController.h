@@ -21,9 +21,9 @@
     UIButton * dateButton;
     NSDate * date;
     NSDateFormatter * format;
-    UILabel * dateLabel;
+   
     
-    //UIAlertView * alertView;
+    UIAlertView * dateAlert;
 }
 - (void)onClick: (UIButton * )button;
 @end

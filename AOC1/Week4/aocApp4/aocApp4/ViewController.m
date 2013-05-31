@@ -21,6 +21,8 @@
     switch (button.tag) {
         case 0:
         {
+            [textField resignFirstResponder];
+            
             validateName = [textField text];
             if (validateName.length < 1)
             {
@@ -36,29 +38,39 @@
         }
             
             break;
+            //Date Step 4
+        case 1:
+        {
+            date = [NSDate date];
             
-//        case 1:
-//        {
-//            iButton = [textField text];
-//            if(infoButton.tag == 2)
-//                
-//            {   //Information Step 4
-//                infoLabel.text = @"This application was created by: Adam Du Puis";
-//                [self.view addSubview:infoLabel];
-//            }
-//            
-//        }
+            NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
+            if (dateFormat != nil)
+            {
+                [dateFormat setDateStyle:NSDateFormatterLongStyle];
+                [dateFormat setTimeStyle:NSDateFormatterFullStyle];
+                NSString * dateInfo = [dateFormat stringFromDate:date];
+                
+                dateAlert = [[UIAlertView alloc] initWithTitle:@"Date" message:dateInfo delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+                if (dateAlert != nil)
+                {
+                    [dateAlert show];
+                }
+                
+            }
+        }
+            break;
+            
             
         case 2:
         {
             iButton = [textField text];
             if(infoButton.tag == 2)
                 
-            {   //Information Step 4         
+            {   //Information Step 4
                 infoLabel.text = @"This application was created by: Adam Du Puis";
                 [self.view addSubview:infoLabel];
             }
-           
+            
         }
             
         default:
@@ -66,11 +78,7 @@
     }
     
     
-//        alertView = [[UIAlertView alloc] initWithTitle:@"popup" message:@"Pressed Button" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
-//        if (alertView != nil)
-//        {
-//            [alertView show];
-//        }
+          
 }
 
 - (void)viewDidLoad
@@ -170,16 +178,9 @@
         [self.view addSubview:dateButton];
     }
     
-    //Date Step 2
     
-    date = [NSDate date];
     
-    NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
-    if (dateFormat) {
-        [dateFormat setDateFormat:@"dd, dd MM YYYY, hh:mm aaa, zzzz"];
-        dateLabel.text = [dateFormat stringFromDate:date];
-        dateButton.tag = 1;
-    }
+    
     
     
     
