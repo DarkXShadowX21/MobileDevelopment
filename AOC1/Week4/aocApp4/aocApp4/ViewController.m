@@ -36,9 +36,8 @@
                 
             }
         }
-            
             break;
-            //Date Step 4
+            //Date Step 4 + 5
         case 1:
         {
             date = [NSDate date];
@@ -60,7 +59,6 @@
         }
             break;
             
-            
         case 2:
         {
             iButton = [textField text];
@@ -70,14 +68,10 @@
                 infoLabel.text = @"This application was created by: Adam Du Puis";
                 [self.view addSubview:infoLabel];
             }
-            
         }
-            
         default:
             break;
     }
-    
-    
     
 }
 
@@ -139,13 +133,6 @@
         [self.view addSubview:dateButton];
     }
     
-    
-    
-    
-    
-    
-    
-    
     //Information Step 2
     infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
     if (infoButton != nil)
@@ -165,8 +152,6 @@
         infoLabel.textColor = [UIColor blackColor];
         infoLabel.numberOfLines = 2;
     }
-    
-    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

@@ -20,9 +20,7 @@
     UIButton * infoButton;
     UIButton * dateButton;
     NSDate * date;
-    NSDateFormatter * format;
-   
-    
+    NSDateFormatter * format; 
     UIAlertView * dateAlert;
 }
 - (void)onClick: (UIButton * )button;
