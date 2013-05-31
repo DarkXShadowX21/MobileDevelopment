@@ -7,8 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-UILabel * userName;
-UILabel * inputName;
-
 @interface ViewController : UIViewController
+{
+    UILabel * userName;
+    UITextField * textField;
+    UIButton * loginButton;
+    UILabel * inputName;
+    NSString * validateName;
+    NSString * validated;
+    NSString * iButton;
+    UILabel * infoLabel;
+    UIButton * infoButton;
+    UIButton * dateButton;
+    NSDate * date;
+    NSDateFormatter * format;
+    UILabel * dateLabel;
+    
+    //UIAlertView * alertView;
+}
+- (void)onClick: (UIButton * )button;
 @end

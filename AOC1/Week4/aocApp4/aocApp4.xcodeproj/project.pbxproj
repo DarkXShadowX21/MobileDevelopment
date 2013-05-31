@@ -467,6 +467,7 @@
 				301B900A1756EAF200C07F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		301B900B1756EAF200C07F0D /* Build configuration list for PBXNativeTarget "aocApp4Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				301B900D1756EAF200C07F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
